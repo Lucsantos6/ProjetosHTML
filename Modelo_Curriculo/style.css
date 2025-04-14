@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding-left: 20px;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(155, 128, 128);
+
+}
+
+#foto {
+    border: 5px solid black;
+
+}
+
+.left-column {
+    background-color: lightgrey;
+    width: 25%;
+    padding: 1rem;
+    float: left;
+
+}
+
+.middle-column {
+    background-color: lightgrey;
+    float: left;
+    width: 50%;
+}
+
+.right-column {
+    width: 25%;
+    padding: 1rem;
+    align-content: center;
+
+}
+
+.right-column>h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(243, 86, 86);
+    text-align: center;
+    font: 16px
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .left-column,
+    .middle-column,
+    .right-column {
+        width: 100%;
+        float: none;
+        padding: 0.5rem;
+    }
+
+    #foto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right-column {
+        text-align: center;
+    }
+
+
+    .right-column nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        list-style: none;
+    }
+
+
+    .right-column nav ul li {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    #foto {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
